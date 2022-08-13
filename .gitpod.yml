@@ -1,0 +1,5 @@
+tasks:
+  - init: |
+      sudo apt update && sudo apt upgrade -y && sudo apt install magic-wormhole ffmpeg -y && pip3 install yt-dlp
+  - command: |
+      echo "alias ytfb='yt-dlp -f bestvideo+bestaudio --concurrent-fragments 64'" >> ~/.bashrc && source ~/.bashrc
